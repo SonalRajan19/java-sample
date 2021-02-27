@@ -1,0 +1,32 @@
+Swing components:
+Steps:
+1. Create an object
+   eg: JLabel l=new JLbale("Class name:");
+2. l1.setBounds(x,y,w,h);
+3. add(l1);
+   -> Listener
+      1. Implments ActionListener
+      2. b1.addActionListener(this)
+      3. public void actionPerformed(ActionEvent ae) {}
+
+List of components:
+1. JLabel -> getText(), setText()
+2. JTextField -> getText(), setText()
+3. JPasswordField -> getText(), setText()
+4. JButton -> ActionListener-> actionPerformed(ActionEvent ae) {}
+5. JCheckbox-> ItemListener -> itemStateChanged(ItemEvent ie) {}
+6. JTextArea
+7. JRadioButton-> ItemListener -> itemStateChanged(ItemEvent ie) {}
+    JButton -> create r1,r2,r3
+    ButtonGroup b=new ButtonGroup();
+    b.add(r1);
+    b.add(r2);
+    b.add(r3);
+    add(r1);
+    add(r2);  
+    add(r3):
+8. JComboBox -> ItemListener -> itemStateChanged(ItemEvent ie) {}
+    String s[]={"acer","dell","hp","vaio","lenovo"};
+    JComboBox c1=new JComboBox(s);
+    add(c1);
+    c1.getIndexAt(c1.selectedIndex()) -> 0,1,2,3

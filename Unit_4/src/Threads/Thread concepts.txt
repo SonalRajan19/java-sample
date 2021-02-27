@@ -1,0 +1,65 @@
+Concepts covered in threads:
+1. Creating thread by extending Thread
+2. sleep method
+3. join method
+4. isAlive method
+5. getname and setname methods
+6. currentThread
+7. getPriority and setPriority methods[1-10],MIN_PRIORITY(0),MAX_PRIORITY(10) & NORM_PRIORITY(5)
+8. Creating thread by implementing Runnable interface
+9. Suspending and resuming
+10. Thread group
+11. Daemon Thread
+12. Interthread communication
+
+Multi-threading:
+->Program=>passive entity
+->process=>program in execution=>active entity
+  ->memory[variables]
+  ->process id 
+  ->cpu cycle /clock speed 2.4GHZ 2.4 10^9
+  ->i/o
+  ->file
+-> Thread=>unit of task within process eg. getting add removing sub getting 
+  ->Multithreading
+  Eg.assign=>10 ques[ 5 students]
+->Main Goal : performance 
+->Real time Eg:
+  1. MS word=>typing, spelling/red, grammar/green, autosave, printing
+  2. Web browser=>chrome [text/image/video/audio]
+  3. web server=>gmail[multithreading]
+               => annauniv
+               => 1000
+
+Multitasking:
+->Multiprocessing=>OS level=>separate memory, difficult, time to switch[context switching], save, heavy weight process 
+->Multithreading=>program level=>share memory within process,light weight process 
+
+Creating Thread in java:
+1. Thread class
+2. Runnable Interface
+class abc
+{
+//
+}
+
+class sample extends abc, Thread // Multiple inheritance is not possible
+{
+// void display()
+}
+
+class sample extends abc implements Runnable
+{
+}
+
+creation of thread
+1. extending thread class
+class sample extends Thread
+{
+//--> void run()
+{
+}
+}
+
+sample obj=new sample();
+obj.start();

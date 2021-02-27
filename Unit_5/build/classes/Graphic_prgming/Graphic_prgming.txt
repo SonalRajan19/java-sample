@@ -1,0 +1,17 @@
+java.awt.components:
+1.void setVisible(boolen b)->true/false
+2.void setBounds(int x,int y,int height,int width)->distance
+3.void setSize(int height,int width)
+4.void setBackground(java.awt.Color)
+5.void setForeground(java.awt.Color)
+6.void repaint()
+7.void setTitle(String s)
+
+Applet:
+->Small applications
+->import java.Applet;
+->public void Simple extends Applet{
+    public void paint(Graphics g){
+      g.drawString("A simple applet",20,20);
+      }
+    }

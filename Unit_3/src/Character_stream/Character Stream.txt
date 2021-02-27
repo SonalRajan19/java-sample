@@ -1,0 +1,30 @@
+Character Stream:
+-> reads information char by char and also writes
+-> Supprts uni code
+-> For inputing-reader and outputing-writer
+->Abstract classes
+
+Reader methods:
+1. CharArrayReader
+2. BufferedReader
+3. InputStreamReader
+4. FileReader
+5. StringReader
+-> read(), read(char[]), read(char[],offset,length)
+
+Writer methods;
+1. CharArrayWriter
+2. BufferedWriter
+3. OutputStreamReader
+4. FileWriter
+5. PrintWriter
+6. StringWriter
+-> write(), write(char[]), write(char[],offset,length)
+
+Programs:
+1. Reading from CharArrayReader
+2. Writing into CharArrayWriter also writing into file
+3. Get input using InputStreamReader and BufferedReader
+4. Display using BufferedWriter and OutputStreamReader
+5. Reading and writing using File Reader and Writer.
+6. Print Writer

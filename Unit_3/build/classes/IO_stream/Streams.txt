@@ -1,0 +1,90 @@
+Streams:
+->Main class-object class(super class)
+  Present in java.lang
+  no need to extend.
+->Abstract class closeable, autocloseable(java.lang)
+  Present in 'java.io' package.
+->Close-method present in interface(closeable)
+  ->jdk 1.7-interface(autocloseable)
+  ->automatically closes the program
+  ->present in java.lang
+->Example
+  ->InputStream obj=new InputStream(); //abstract class(incorrect)
+    FileInputStream fis=new FileInputStream("path"); //.txt/.java
+
+Input Streams:
+1. FileInputStream
+    ->to handle file
+    ->reads 1 file at a time
+    ->input is file
+2. ByteArrayInputStream
+    ->have byte
+    ->passes input to stream
+3. FilterInputStream
+    ->provides extra functionality to the program
+    ->1.DataInputStream
+        ->primitive data
+        ->can't handle everything in byte form
+        ->DataInput interface(has methods-used to get input;readInt,readChar)
+    ->2.BufferedInputstream
+        ->system is faster than i/p,o/p devices
+        ->Buffer-instead of sending data, collects data in input device and stores in a data
+        (to cope up speed between program and i/p-o/p devices)
+4. ObjectInputStream
+    ->to store objects of a class (present in heap memory until using it)
+    ->reads content of my file
+    ->ObjectInput interface
+5. PipedInputStream
+    ->handling 2 or more operations simultaneouly
+    ->Common, ascending and descending sorting, search
+6. SequenceInputStream
+    ->to read a number of files at a time
+    ->{10 files] 1,2,3,4,....,10
+7. StringBufferInputStream
+    ->to handle BufferInput
+    ->String
+
+Output Streams:
+1. FileOutputStream
+2. ByteArrayOutputStream
+3. FilterOutputStream
+    ->1. DataOutputStream (primitive data)
+    ->2. BufferedOutputstream
+    ->3. PrintStream
+         ->datas gets stored as it is(to read and write the content directly)
+4. ObjectOutputStream
+5. PipedOutputStream
+->Abstract classs closeable, autocloseable and flushable
+
+Methods:
+1. InputStream class methods:
+    public int available() throws IOException
+    public int close() -to close the streams
+    public int read() //abstract -to read the content
+    public int read(byte[] b) -to read the content depending on the length
+    public int rea(byte[] b,int offset,int length) -to read
+    public boolean markSupported()* -reads from the particular position from where we have to read
+    public void mark(int readlimit)* -reads from a particular line
+    public void reset() -begins again after object processing
+    public long skip(long n) -until some lines can skip and read others
+2.  OutputStream class methods:
+    public void close() throws IOException
+    public void write() //abstract
+    public void write(byte[] b)
+    public void write(byte[] b,int offset,int length)
+    public void flush() -to clear datas
+
+Programs:
+1. Write a file using FileOutputStream.
+2. Read from a file using FileInputStream.
+3. Copy content from one file to another file using File Input and Output Stream.
+4. Get input using DataInputStream and print using DataOutputStream. //Scanner
+5. Use DataOutputStream and DataInputStream to write and read primitive data type. //1000,s,oops
+6. Get input using ByteArrayInputStream and print using ByteArrayOutputStream.
+7. Object reading and writing in file.
+8. Reading 2 files at a time using SequenceInputStream.
+9. Printing using PrintStream. //primitive data type
+10.Working with Piped Input and Output Stream. //Threading
+11.BufferedInputstream and BufferedOutputstream. 
+12.File processing.
+13. File properties

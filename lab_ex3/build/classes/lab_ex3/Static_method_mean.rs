@@ -1,0 +1,2 @@
+lab_ex3.average
+lab_ex3.Static_method_mean

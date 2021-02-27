@@ -1,0 +1,10 @@
+Programs:
+1. Reverse String
+2. Email and phone validation
+3. Concatenate string without builtin method
+4. Swap without 3rd variable
+5. Capitalize the 1st character
+6. Occurence of specified char/vowel/sentence
+7. Frequency of character in String
+8. Palindrome->racecar(1st check with last character)
+9. Anagram->listen silent(char array, sorting array)

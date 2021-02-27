@@ -1,0 +1,6 @@
+Synchronization:
+->Types:
+  1.Process synchronization
+  2.Thread synchronisation
+    1.Mutual exclusive
+    2.Cooperation(Inter-thread communication in java)

@@ -1,0 +1,36 @@
+Event handling:
+* Event
+* Event source
+* Event handled
+->Steps:
+  1. Listener(mouse,key,window..)
+  2. addListener
+  3. Implement all methods
+
+MouseListener:
+1. public void mouseListener(MouseEvent me) {}
+2. public void mousePressed(MouseEvent me) {}
+3. public void mouseReleased(MouseEvent me) {}
+4. public void mouseEntered(MouseEvent me) {}
+5. public void mouseExcited(MouseEvent me) {}
+
+MouseMotionListener
+1. public void mouseDragged(MouseEvent me) {}
+2. public void mouseMoved(MouseEvent me) {}
+
+KeyListener
+1. public void KeyTyped(KeyEvent ke) {}
+2. public void KeyPressed(KeyEvent ke) {}
+3. public void KeyReleased(KeyEvent ke) {}
+
+WindowListener:
+1. public void WindowActivated(WindowEvent we) {}
+2. public void WindowClosed(WindowEvent we) {}
+3. public void WindowClosing(WindowEvent we) {}
+4. public void WindowDeactivated(WindowEvent we) {}
+5. public void WindowDeiconified(WindowEvent we) {}
+6. public void WindowConified(WindowEvent we) {}
+7. public void WindowOpened(WindowEvent we) {}
+
+Swing class:
+-> Customises our components
